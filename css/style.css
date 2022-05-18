@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+body{
+    height: 97vh;
+    background-image: linear-gradient(#93A5CF , #E4EfE9);
+}
+.header{
+    display: flex;
+    margin: 20px;
+    padding: 0 20px 0 20px;
+    /* border: 1px solid aquamarine; */
+    justify-content: space-between;
+    height: 13%;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.28); */
+   
+}
+.col1,.col2{
+    flex-direction: column;
+
+
+}
+#logo{
+    width: 80px;
+    border-radius: 100%;
+    margin-right:10px ;
+
+}
+#openbtn{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.645);
+    padding: 12px;
+}
+.name{
+    font-size: 1.5rem;
+   
+}
+.main{
+    display: flex;
+    margin: 0px 20px 10px 20px;
+    height: 70%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    background-color: #8183825f;
+    border-radius: 3%;
+}
+.submain{
+    width: 50%;
+    /* border: 1px solid blueviolet; */
+    margin: 10px;
+    border-radius: 5%;
+    background-color: #f1efef6f;
+}
+.img{
+    /* width:90% ; */
+    background-image: url(/media/fablab1.jpg);
+    background-size: cover;
+}
+#eventbtn{
+    border-radius: 10%;
+    background-color: #9ef4e8;
+    text-align: center;
+
+}
+.coming-soon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.day,.hour,.minute,.second{
+    font-size: .5rem;
+    padding: 30px;
+}
+h3{
+    font-size: .3rem;
+}
+.description{
+    text-align: center;
+}
+hr{
+    margin: 20px;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    border-color: grey;
+    justify-content: center;
+}
+.footer{
+    position: relative;
+    height: 13%;
+    overflow: hidden;
+}
+.footer div{
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateX(100%);
+    animation: scrolling 40s linear infinite;
+}
+@keyframes scrolling{
+    0%{
+    transform: translateX(30%);
+    }
+    100%{
+        transform: translateX(-100%);
+        }
+}
